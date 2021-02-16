@@ -105,9 +105,6 @@ print(testY.shape)
 
 opt = Adam(lr=1e-3, decay=1e-3)
 model.compile(optimizer=opt,loss='categorical_crossentropy',metrics=['accuracy'])
-# Adam optimizer
-# loss function will be categorical cross entropy
-# evaluation metric will be accuracy
 
 
 earlystop = EarlyStopping(monitor='val_loss',
